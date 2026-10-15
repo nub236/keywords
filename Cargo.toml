@@ -1,0 +1,17 @@
+[package]
+name = "keywords"
+version = "0.1.0"
+edition = "2021"
+description = "Fuzzy keyword correction for Spokenly (ported from Handy)"
+
+[[bin]]
+name = "keywords"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+strsim = "0.11.0"
+rphonetic = "4.0.0"
+once_cell = "1"

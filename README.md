@@ -13,9 +13,6 @@ curl -fsSL https://raw.githubusercontent.com/nub236/keywords/main/keywords-darwi
 chmod +x ~/.local/bin/keywords
 ```
 
-Replace `<OWNER>/<REPO>` with your GitHub repo path. No build tools needed —
-the `keywords-darwin-arm64` binary in this repo is ready to run on Apple Silicon.
-
 To build from source instead:
 
 ```bash
@@ -55,10 +52,6 @@ Contract details (from Spokenly docs): the script reads the transcript from
 stdin and prints the result to stdout. `keywords fix` with no args does
 exactly that; `echo "hi" | keywords` also works. Must finish in 30s —
 this finishes in milliseconds.
-
-> App Store sandbox note: sandboxed builds can't reach the wider filesystem.
-> If the script can't read `~/.config/keywords/keywords.json`, use the
-> sideload build of Spokenly (runs through your login shell with `$PATH` intact).
 
 ## How matching works
 
